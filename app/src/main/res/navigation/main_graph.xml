@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph.xml"
+    app:startDestination="@id/inputFragment">
+
+    <fragment
+        android:id="@+id/inputFragment"
+        android:name="com.example.secondtask.InputFragment"
+        android:label="InputFragment" >
+        <action
+            android:id="@+id/action_inputFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.secondtask.ListFragment"
+        android:label="ListFragment" >
+        <action
+            android:id="@+id/action_listFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.secondtask.DetailFragment"
+        android:label="DetailFragment" />
+</navigation>
